@@ -13,7 +13,4 @@ import java.io.Serializable;
  */
 public enum MessageType implements Serializable{
     SIGN_IN_REQUEST, SIGN_UP_REQUEST, OK_RESPONSE, SIGN_IN_ERROR, USER_EXISTS_ERROR, USER_NOT_ACTIVE;
-    
-    
-    
 }
