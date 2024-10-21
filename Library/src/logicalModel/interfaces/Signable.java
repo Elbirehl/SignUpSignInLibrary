@@ -14,6 +14,4 @@ import logicalModel.model.User;
 public interface Signable {
     public User signIn(User user);
     public User signUp(User user);
-    public void closeApp();
-    public void closeSession();
 }
