@@ -5,6 +5,11 @@
  */
 package logicalModel.interfaces;
 
+import logicalExceptions.MaxThreadsErrorException;
+import logicalExceptions.ServerErrorException;
+import logicalExceptions.SignInErrorException;
+import logicalExceptions.UserExistErrorException;
+import logicalExceptions.UserNotActiveException;
 import logicalModel.model.User;
 
 /**
@@ -19,8 +24,12 @@ public interface Signable {
      * 
      * @param user the user attempting to sign in
      * @return the signed-in user with updated information
+     * @throws logicalExceptions.MaxThreadsErrorException
+     * @throws logicalExceptions.ServerErrorException
+     * @throws logicalExceptions.SignInErrorException
+     * @throws logicalExceptions.UserNotActiveException
      */
-    public User signIn(User user);
+    public User signIn(User user) throws MaxThreadsErrorException, ServerErrorException, SignInErrorException,UserNotActiveException;
     
     /**
      * Registers a new user in the system.
@@ -28,7 +37,7 @@ public interface Signable {
      * @param user the user attempting to sign up
      * @return the registered user with updated information
      */
-    public User signUp(User user);
+    public User signUp(User user) throws ServerErrorException, UserExistErrorException;
     
     /**
      * Closes the application.

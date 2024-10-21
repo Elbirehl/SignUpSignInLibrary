@@ -44,5 +44,15 @@ public enum MessageType implements Serializable {
     /** 
      * Indicates that the user is not active in the system. 
      */
-    USER_NOT_ACTIVE;
+    USER_NOT_ACTIVE,
+    
+    /** 
+     * Indicates that there is an error with the database of any kind. 
+     */
+    SERVER_ERROR,
+    
+    /** 
+     * Indicates that the max thread number has alredy been reached. 
+     */
+    MAX_THREADS_ERROR;
 }
