@@ -39,13 +39,4 @@ public interface Signable {
      */
     public User signUp(User user) throws ServerErrorException, UserExistErrorException;
     
-    /**
-     * Closes the application.
-     */
-    public void closeApp();
-    
-    /**
-     * Closes the current user session.
-     */
-    public void closeSession();
 }
