@@ -36,7 +36,10 @@ public interface Signable {
      * 
      * @param user the user attempting to sign up
      * @return the registered user with updated information
+     * @throws logicalExceptions.ServerErrorException
+     * @throws logicalExceptions.UserExistErrorException
+     * @throws logicalExceptions.MaxThreadsErrorException
      */
-    public User signUp(User user) throws ServerErrorException, UserExistErrorException;
+    public User signUp(User user) throws ServerErrorException, UserExistErrorException,MaxThreadsErrorException;
     
 }
