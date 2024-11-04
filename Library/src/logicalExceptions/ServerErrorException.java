@@ -1,26 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package logicalExceptions;
 
 /**
+ * Exception thrown when a server error occurs.
  *
- * @author 2dam
+ * This class extends the Exception class to provide specific error handling for
+ * situations where the server encounters an issue that prevents it from
+ * fulfilling a request.
+ *
+ * @author Elbire
  */
 public class ServerErrorException extends Exception {
 
     /**
-     * Creates a new instance of <code>ServerErrorException</code> without
-     * detail message.
+     * Creates a new instance of ServerErrorException without a detail message.
      */
     public ServerErrorException() {
     }
 
     /**
-     * Constructs an instance of <code>ServerErrorException</code> with the
-     * specified detail message.
+     * Constructs an instance of ServerErrorException with the specified detail
+     * message.
      *
      * @param msg the detail message.
      */

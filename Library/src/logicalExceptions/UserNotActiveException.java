@@ -1,26 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package logicalExceptions;
 
 /**
+ * Exception thrown when a user is not active.
  *
- * @author 2dam
+ * This class extends the Exception class to provide specific error handling for
+ * situations where an action is attempted on a user account that is inactive,
+ * such as trying to sign in or perform actions that require an active account
+ * status.
+ *
+ * @author Elbire
  */
 public class UserNotActiveException extends Exception {
 
     /**
-     * Creates a new instance of <code>UserNotActiveException</code> without
-     * detail message.
+     * Creates a new instance of UserNotActiveException without a detail
+     * message.
      */
     public UserNotActiveException() {
     }
 
     /**
-     * Constructs an instance of <code>UserNotActiveException</code> with the
-     * specified detail message.
+     * Constructs an instance of UserNotActiveException with the specified
+     * detail message.
      *
      * @param msg the detail message.
      */
